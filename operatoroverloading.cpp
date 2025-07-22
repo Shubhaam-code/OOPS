@@ -3,8 +3,8 @@ using namespace std;
 
 class demo{
     public:
-    
-    void getdata(int a){
+    int a
+    void getdata(){
         cout<<"ENTER THE VALUE OF A :";
         cin>>a;
     }
