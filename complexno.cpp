@@ -1,28 +1,40 @@
 #include<iostream>
 using namespace std;
 
-class complex
-{  public:
-    int x;
-    int k;
-    void real(int i,int j)
+class complex{
+    public:
+    int a ,b;
+    //input section
+    void getdata()
     {
-        x=i+j;
-        cout<<x;
+        cout<<"ENTER THE VALUE OF a :";
+        cin>>a;
+        cout<<"ENTER THE VALUE OF b :";
+        cin>>b;
     }
-    
-    void imaginary(int i,int j)
-    {
-     k=i+j;
-     cout<<"+";
-     cout<<k;
-     cout<<"i";
+    void putdata(){
+        cout<"\n"<<a<<b;
+    }
+    complex operator+(complex bb){
+        complex cc;
+        cc.a=a+bb.a;
+        cc.b=b+bb.b;
+        return cc;
     }
 };
-int main()
-{
-    complex a;
-    a.real(9,3);
-    a.imaginary(9,4);
-    return 0;
+
+int main(){
+    complex aa,bb,cc;
+    aa.getdata();
+    bb.getdata();
+    cc=aa+bb;
+    aa.putdata();
+    cout<<endl;
+    bb.putdata();
+    cout<<endl;
+    cc.putdata();
+    cout<<endl;
+
+   
+    
 }
