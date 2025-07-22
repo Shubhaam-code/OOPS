@@ -13,7 +13,7 @@ class complex{
         cin>>b;
     }
     void putdata(){
-        cout<"\n"<<a<<b;
+        cout<<a <<"+i"<<b;
     }
     complex operator+(complex bb){
         complex cc;
