@@ -28,7 +28,7 @@ class student:protected human{
     void dispaly()
     {
 
-        cout<<"NAME "<<name<<" AGE "<<age<<" śweight "<<weight;
+        cout<<"NAME "<<name<<" AGE "<<age<<" weight "<<weight;
     }
 
 
