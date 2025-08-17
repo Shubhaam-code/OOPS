@@ -3,11 +3,13 @@ using namespace std;
 
 class demo{
     public:
-    int a
+    int a;
+    //input
     void getdata(){
         cout<<"ENTER THE VALUE OF A :";
         cin>>a;
     }
+    //output
 
     void putdata(){
         cout<<"VALUE OF A :"<<a;
@@ -22,8 +24,8 @@ class demo{
 
 int main(){
     demo aa,bb,cc;
-    aa.getdata(5);
-    bb.getdata(6);
+    aa.getdata();
+    bb.getdata();
     aa.putdata();
     cout<<endl;
     bb.putdata();
