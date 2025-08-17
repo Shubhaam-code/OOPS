@@ -14,7 +14,7 @@ class B:public A{
         cout<<"DERIVED CLASS....."<<endl;
     }
 
-};
+}; 
 class C:public A{
     public:
     void show(){
@@ -36,12 +36,12 @@ int main(){
     // late binding
     A *bptr;
     A aa; // here object is base class
-    bptr=&aa;
+    bptr=&aa; // adress of A object store
     bptr->show();
 
     
     B bb;  // here object is derived class
-    bptr=&bb;
+    bptr=&bb;  // address of B object store
     bptr->show(); // but print base class show function
 
     // NOW TO OVERCIME THIS PROBELM

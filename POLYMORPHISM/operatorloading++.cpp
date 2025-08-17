@@ -33,3 +33,30 @@ int main(){
 
 
 }
+
+
+
+
+class demo{
+    int x;
+    public:
+    void getdata(){
+        cout<<"ENTER THE VALUE OF X :";
+        cin>>x;
+    }
+    void putdata(){
+        cout<<"X :"<<x<<endl;
+    }
+    void operator++(int){
+        x=x+1;
+    }
+};
+int main(){
+    demo aa;
+    aa.getdata();
+    aa.putdata();
+    aa++;
+    aa.putdata();
+    
+    
+}

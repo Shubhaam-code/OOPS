@@ -1,10 +1,11 @@
 #include <iostream>
 using namespace std;
-
+// abstract class
 class A{
     public:
     virtual void show()=0;
 };
+
 class B:public A{
     public:
     void show(){
@@ -20,4 +21,6 @@ int main(){
     B aa;
     ptr=&aa;
     ptr->show();
+    aa.display();
+
 }
