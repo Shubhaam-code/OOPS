@@ -5,16 +5,14 @@ class addition{
     public:
     int sum(int x,int y){
         x+=10;
-        cout<<"x ="<<x<<endl;
-        cout<<"ADDITION "<<x+y<<endl;
+        cout<<"x = "<<x<<endl;
+        return (x+y);
     }
 };
 int main(){
     int a=5,b=10;
     addition aa;
-     cout<<a;
-    
-    cout<<aa.sum(a,b);
-    cout<<a;
+    cout<<"ADDITION "<<aa.sum(a,b)<<endl;
+    cout<<"ORIGINAL VALUE OF A "<<a;
     
 }
