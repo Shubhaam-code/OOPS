@@ -5,9 +5,11 @@ using namespace std;
 class demo{
     int x;
     public:
+    // default constructor
     demo(){
         x=10;
     }
+    // copy constructor
     demo(demo &z){
         x=z.x;
     }
