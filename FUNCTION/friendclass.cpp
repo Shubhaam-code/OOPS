@@ -20,4 +20,4 @@ int main(){
     X obj(5);
     Y aa;
     aa.show(obj);
-}
+}  
