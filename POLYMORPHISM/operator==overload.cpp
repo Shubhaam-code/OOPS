@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+
+class demo{
+    int x;
+    public:
+    void getdata(){
+        cout<<"ENTER THE VALUE OF X :";
+        cin>>x;
+    }
+    void putdata(){
+        cout<<"X :"<<x<<endl;
+    }
+    void operator==(demo bb){
+        if(x==bb.x){
+            cout<<"VALUE OF X IS SAME";
+        }
+        else{
+            cout<<"VALUE OF X IS DIFFERENT";
+        }
+        
+    }
+};
+int main(){
+    demo aa,bb;
+    bb.getdata();
+    aa.getdata();
+    aa==bb;
+    
+    
+}
