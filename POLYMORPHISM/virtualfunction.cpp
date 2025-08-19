@@ -37,7 +37,7 @@ int main(){
     A *bptr;
     A aa; // here object is base class
     bptr=&aa; // adress of A object store
-    bptr->show();
+    bptr->show(); // ye A* pointer bss wahi function ko call karega jo base class me ha 
 
     
     B bb;  // here object is derived class
