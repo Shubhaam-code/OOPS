@@ -16,7 +16,7 @@ class addition{
 
 int main(){
     addition *ptr;
-    ptr=new addition;
+    ptr=new addition();
     ptr->setdata(10,20);
     cout<<ptr->add();
     delete ptr;
